@@ -7,4 +7,13 @@ const notes = [
 
 // .map()
 const noteTitles = notes.map((note, index) => `${index + 1}. ${note.title}`);
-console.log(noteTitles);
+console.log('Note Titles: ', noteTitles);
+
+console.log('---------------------------');
+
+
+// .filter()
+const pinnedNotes = notes.filter((note) => note.isPinned).map((note) => note.title);
+console.log('Pinned Notes: ', pinnedNotes);
+
+console.log('---------------------------');
