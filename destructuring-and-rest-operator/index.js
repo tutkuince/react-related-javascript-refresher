@@ -25,7 +25,10 @@ console.log(isPinned);      // true
 // Nested Destructing
 const user = {
     name: 'Ben',
-    address: {city: 'Boston', state: 'MA'}
+    address: { city: 'Boston', state: 'MA' },
+    hobbies: ['Movies', 'Sports', 'Music']
 };
-const { name, address } = user;
-console.log(address);
+const { name, address: { city, state }, hobbies: [firstHobby, ...otherHobbies] } = user;
+console.log(city, state);
+console.log(firstHobby);
+console.log(otherHobbies);
