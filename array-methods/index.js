@@ -26,3 +26,8 @@ console.log(sum);
 
 const totalCharacters = notes.reduce((total, note) => total + note.content.length, 0);
 console.log('Total Character: ', totalCharacters);
+
+console.log('---------------------------');
+
+// .forEach
+notes.forEach((note) => console.log(note.title));
