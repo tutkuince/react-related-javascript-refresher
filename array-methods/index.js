@@ -17,3 +17,12 @@ const pinnedNotes = notes.filter((note) => note.isPinned).map((note) => note.tit
 console.log('Pinned Notes: ', pinnedNotes);
 
 console.log('---------------------------');
+
+
+// .reduce
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((total, number) => total + number, 0);
+console.log(sum);
+
+const totalCharacters = notes.reduce((total, note) => total + note.content.length, 0);
+console.log('Total Character: ', totalCharacters);
